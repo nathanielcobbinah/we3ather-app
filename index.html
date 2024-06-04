@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gradient-to-b from-black to-blue-900">
+
+<header class="bg-blue-900 text-center py-3">
+    <h1 class="font-bold text-2xl text-white my-1">Weather Forecast</h1>
+</header>
+
+<div class="container mx-auto my-4 px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div>
+            <h5 class="font-bold text-white">Enter a City Name</h5>
+            <input type="text" id="city-input" class="py-2 px-3 border rounded-lg w-full mt-2" placeholder="E.g., New York, London, Tokyo">
+            <button id="search-btn" class="bg-blue-900 text-white py-2 px-4 rounded-full w-full mt-3">Search</button>
+        </div>
+
+        <div class="mt-4 lg:mt-0">
+            <div class="current-weather bg-blue-900 text-white py-2 px-4 rounded-lg ring-1 ring-blue-500">
+                <div class="mt-3">
+                    <h3 class="font-bold text-2xl">City Name (Date)</h3>
+                    <h6 class="my-3">Temperature: --°C</h6>
+                    <h6 class="my-3">Wind: -- M/S</h6>
+                    <h6 class="my-3">Humidity: --%</h6>
+                </div>
+            </div>
+            <h4 class="font-bold my-4 text-white">5-Day Forecast</h4>
+            <div class="days-forecast grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                <div class="bg-blue-900 ring-1 ring-blue-500 text-white p-4 rounded-lg">
+                    <h5 class="font-semibold">City Name</h5>
+                    <h6 class="my-3">Temp: --°C</h6>
+                    <h6 class="my-3">Wind: -- M/S</h6>
+                    <h6 class="my-3">Humidity: --%</h6>
+                </div>
+                <div class="bg-blue-900 ring-1 ring-blue-500 text-white p-4 rounded-lg">
+                    <h5 class="font-semibold">City Name</h5>
+                    <h6 class="my-3">Temp: --°C</h6>
+                    <h6 class="my-3">Wind: -- M/S</h6>
+                    <h6 class="my-3">Humidity: --%</h6>
+                </div>
+                <div class="bg-blue-900 ring-1 ring-blue-500 text-white p-4 rounded-lg">
+                    <h5 class="font-semibold">City Name</h5>
+                    <h6 class="my-3">Temp: --°C</h6>
+                    <h6 class="my-3">Wind: -- M/S</h6>
+                    <h6 class="my-3">Humidity: --%</h6>
+                </div>
+                <div class="bg-blue-900 ring-1 ring-blue-500 text-white p-4 rounded-lg">
+                    <h5 class="font-semibold">City Name</h5>
+                    <h6 class="my-3">Temp: --°C</h6>
+                    <h6 class="my-3">Wind: -- M/S</h6>
+                    <h6 class="my-3">Humidity: --%</h6>
+                </div>
+                <div class="bg-blue-900 ring-1 ring-blue-500 text-white p-4 rounded-lg">
+                    <h5 class="font-semibold">City Name</h5>
+                    <h6 class="my-3">Temp: --°C</h6>
+                    <h6 class="my-3">Wind: -- M/S</h6>
+                    <h6 class="my-3">Humidity: --%</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
